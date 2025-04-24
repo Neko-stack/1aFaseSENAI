@@ -81,5 +81,12 @@ function exercicio7(){
 }
 
 function exercicio8(){
-    
+    let ano = prompt("Digite o ano: ")
+
+    if(ano % 4 === 0 && ano % 100 !== 0 || ano % 400 === 0){
+        alert(`${anoBissexto} é um ano bissexto`)
+    }else{
+        alert(`${anoBissexto} nao é um ano bissexto`)
+    }
+
 }
