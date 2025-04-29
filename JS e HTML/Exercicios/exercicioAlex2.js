@@ -134,13 +134,6 @@ function exercicio18(){
 
 function exercicio20(){
 
-
-
-
-
-
-
-    /*
     const palavras = ["PROGRAMAR", "JAVASCRIPT", "COMPUTADOR", "DESENVOLVER", "ALGORITMO", "INTERNET"];
     const palavraSecreta = palavras[Math.floor(Math.random() * palavras.length)];
     let letrasAcertadas = [];
@@ -182,28 +175,74 @@ function exercicio20(){
     }
   
     alert(`Você perdeu! A palavra era: ${palavraSecreta}`);
-*/
+
 
     
 }
 
 function exercicio22(){
-  
+    let questao1 = prompt("Qual o nome do criador desse programa?\na) Gabriel\nb) Marcos\nc)Guilherme\nd)João")
+    let questao2 = prompt("Qual programas está sendo usado nesse programa?\na) java\nb) JS e HTML\nc)Python e HTML\nd)C#")
+
+
+
+    if(questao1 === "a" && questao2 === "b"){
+        alert("Você acertou as 2 questões!!")
+    }else if(questao1 === "a" && questao2 != "b"){
+        alert("Você acertou 1 de 2 questões!!")
+    }else if(questao1 != "a" && questao2 === "b"){
+        alert("Você acertou 1 de 2 questões!!") 
+    }else{
+        alert("Você acertou 0 de 2 questões!")
+    }
 
 }
 
 function exercicio30(){
-  
+    const frases = ["Hoje é um ótimo dia para começar algo novo.",
+        "Acredite em si mesmo e você será imparável.",
+        "Se você pode sonhar, pode realizar.",
+        "A persistência leva ao sucesso."];
+    const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
 
+
+    alert(fraseAleatoria)
 }
 
 function exercicio32(){
-  
+    let frases = ["Sim", "Não", "Talvez"]
+    const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
 
+
+    alert(`Responda aleatóriamente entre sim, não e talvez:\n\nA resposta do computador foi ${fraseAleatoria}`)
 }
 
 function exercicio34(){
-  
+    const opcoes = ["1 - 😀 Feliz\n",
+        "2 - 😢 Triste\n",
+        "3 - 😡 Bravo\n",
+        "4 - 😴 Com sono\n",
+        "5 - 😎 Descolado\n",
+        "6 - 😍 Apaixonado"
+    ];
+
+    let escolha = Number(prompt(`Escolha como está se sentindo hoje:\n${opcoes}`))
+
+    if(escolha === 1){
+        alert("Você está se sentindo: 😀 Feliz ")
+    }else if(escolha === 2){
+        alert("Você está se sentindo: 😢 Triste ")
+    }else if(escolha === 3){
+        alert("Você está se sentindo: 😡 Bravo ")
+    }else if(escolha === 4){
+        alert("Você está se sentindo: 😴 Com sono ")
+    }else if(escolha === 5){
+        alert("Você está se sentindo: 😎 Descolado ")
+    }else if(escolha === 6){
+        alert("Você está se sentindo: 😎 Descolado ")
+    }else{
+        alert("ERROR")
+    }
 
 }
 
