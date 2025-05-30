@@ -1,3 +1,33 @@
+// let nome, email, senha
+
+let usuario = {
+    nome: 'um',
+    email: 'dois',
+    senha: 'nuvem'
+}
+
+function cadastrar(){ 
+    usuario.email = document.getElementById('inpCadEmail').value
+    usuario.nome = document.getElementById('inpCadNome').value
+    usuario.senha = document.getElementById('inpCadSenha').value
+    alert("Cadastrado com sucesso!")
+
+    console.log(usuario)
+}
+
+function logar(){
+    let nome = document.getElementById('inpLogNome').value
+    let senha = document.getElementById('inpLogSenha').value
+
+
+    if(nome === usuario.nome && senha === usuario.senha){
+        alert("Login efetuado")
+        mostrarProdutos()
+    }else{
+        alert("Login nao efetuado")
+    }
+}
+
 function mostrarLogin(){
     esconderTodos()
     document.getElementById("login").style.display = "flex"
@@ -21,3 +51,5 @@ function esconderTodos(){
     document.getElementById("login").style.display = "none"
     document.getElementById("produtos").style.display = "none"
 }
+
+

@@ -59,7 +59,8 @@ body {
 }
 
 #produtos{
-    display: block;
+    display: none;
+
 }
 
 *{
