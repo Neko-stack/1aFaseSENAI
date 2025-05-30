@@ -22,6 +22,7 @@ function logar(){
 
     if(nome === usuario.nome && senha === usuario.senha){
         alert("Login efetuado")
+        limparInput()
         mostrarProdutos()
     }else{
         alert("Login nao efetuado")
@@ -50,6 +51,19 @@ function esconderTodos(){
     document.getElementById("cadastro").style.display = "none"
     document.getElementById("login").style.display = "none"
     document.getElementById("produtos").style.display = "none"
+}
+
+function limparInput(){
+    document.getElementById("inpCadNome").value = ''
+    document.getElementById("inpCadSenha").value = ''
+    document.getElementById("inpCadEmail").value = ''
+
+    document.getElementById("inpLogNome").value = ''
+    document.getElementById("inpLogSenha").value = ''
+
+    
+
+
 }
 
 
