@@ -39,9 +39,9 @@ console.log(palavras)
 let numeros3 = [10, 20, 1000, 40, 50, 60]
 let numeros3Desc = []
 for(let i = 0;i < (numeros3.length * numeros3.length); i++) {
-    if( numeros3[i+1])
-}
-
+     } if( numeros3[i+1])
+    
+    
 
 
 numeros3.sort((a,b)=> a-b)
@@ -94,3 +94,47 @@ console.log(frutas.indexOf('laranja'))
 let mistos = ['asdasd', 'adddwww', 22, 12]
 let strings = mistos.filter(valor =>typeof valor === 'string')
 console.log(strings)
+
+
+//27
+let palavras3 = ['teste', 'sla', 'algo']
+let palavrasMaiusculo = palavras3.map((palavra) => {
+    let [primeira,...restante] = palavra
+    let novapalavra = primeira[0].toUpperCase() 
+    return novapalavra + restante.join('')
+})
+console.log(palavrasMaiusculo)
+
+
+//28
+let elemento = [3,4,5,6,7,8]
+let saonumero = elemento.every((elemento) => typeof elemento === "number")
+
+//29 
+let elemento2 = [3,4,5,6,7,8, 100, 120]
+let numeroMaior = elemento2.every((elemento) => typeof elemento > 100 )
+console.log(numeroMaior)
+
+//30 
+let arrayArray = [3,2,1,3,[4,7,5,8,4], [3,8,45,123]] 
+let arrays = arrayArray.flat()
+console.log(arrays)
+
+
+//32 
+let numeross= [5,6,7,8]
+function calcularMedia(array){
+    let soma = array.reduce((acumulador, atual) => acumulador =+ atual ,0)
+    console.log(soma)
+    return soma/array.length
+}
+console.log(calcularMedia(numeross))
+
+
+//34 
+function rotacionar(array){
+    array.unshift(array.pop())
+}
+console.log(rotacionar(notas))
+
+//37
