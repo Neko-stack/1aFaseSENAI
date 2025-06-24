@@ -1,0 +1,29 @@
+getUsers: carrega a lista de usuarios no navegador
+retorna se sim pega o local storage, se nao pega o array vazio
+
+
+saveUsers: salva no localstorage a lista de usuarios
+e converte em string
+
+cadastro: tem a animação ali no começo
+tem os input pro dados
+if para verificar se ja existe o usuario
+ao adicionar novos dados, salva no saveUsers
+e mostra pagina de login
+
+
+login:animação de começo tambem
+input para colocar os dados
+verifica se os dados no colocados no login foram
+salvos no cadastro
+se o usuario estiver no local storage, ele entra
+caso nao, ele recebe uma mensagem de erro
+
+modal: ver dps
+
+
+
+functions diversas: 
+
+
+
